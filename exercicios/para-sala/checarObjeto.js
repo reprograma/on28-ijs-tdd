@@ -17,5 +17,4 @@ function isObject(obj) {
     return type === 'function' || type === 'object' && !!obj;
 }
 
-
 module.exports = { allKeys, isObject }

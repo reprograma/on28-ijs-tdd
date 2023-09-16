@@ -4,12 +4,12 @@ function checkEvenNumber(num){
     let result = '';
 
     if(isNaN(num)) {
-        result = num + " não é um número";
+        result = num + " não é um número";  // batata não é um número
     } else {
         if (num % 2 == 0) {
-            result = num + " é um número par";
+            result = num + " é um número par"; // 2 é um número par
         } else {
-            result = num + " é um número ímpar";
+            result = num + " é um número ímpar"; // 3 é um número ímpar
         }
     }
 

@@ -26,5 +26,5 @@ function generateCombinations(word)
     return combinations;
 }
 
-
+console.log(generateCombinations("dia"))
 module.exports = generateCombinations

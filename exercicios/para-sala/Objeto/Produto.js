@@ -1,6 +1,9 @@
 // Produto -  nome, preço, estoque
 // consultar o estoque, adicionar ao estoque, remover do estoque
 // Caso voce mais itens do que tem no estoque - resulta em erro
+
+// adicionar ao estoque, consulta de estoque, remover do estoque
+
 class Produto{
     constructor(nome, preco, estoque){
         this.nome = nome;
@@ -34,3 +37,5 @@ console.log(empada.adicionarAoEstoque(2))
 console.log(empada)
 console.log(empada.removerDoEstoque(2))
 console.log(empada.consultarEstoque())
+
+module.exports = Produto
