@@ -14,7 +14,7 @@ Antes de começar, vamos organizar nosso setup.
 * [Add outras intrucoes caso necessario]
 
 ### Objetivo
-Entender a importância dos testes de software
+Entender a importância dos testes de software e escrever nossos primeiros testes.
 
 ### Resumo
 O que veremos na aula de hoje?
