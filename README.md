@@ -88,6 +88,41 @@ O Conceito da pirâmide explica o quanto testes de GUI são custosos em relaçã
     - Teste Funcional: Verifica funções, emulando cenários de negócios, com base em requisitos funcionais;
     - Teste de Caos: Testa a integridade, simulando e identificando proativamente falhas antes que elas levem a um tempo de inatividade não planejado ou uma experiência negativa do usuário.
 
+
+### Sete princípios de teste de software
+1. Teste demonstra a presença de defeitos
+
+"O teste fala sobre a presença de defeitos e não fala sobre a ausência de defeitos". O objetivo do teste de software é fazer com que o software falhe. O teste de software reduz a presença de defeitos, mas não pode garantir que o software esteja 100% livre de bugs.
+
+2. Teste exaustivo é impossível
+
+O processo de testar a funcionalidade do software em todas as entradas e pré-condições possíveis - válidas ou inválidas - é conhecido como teste exaustivo. O teste exaustivo é impossível porque o software nunca pode testar em todos os casos de teste, isso demandaria mais custo, tempo, esforço, etc., o que é impraticável. O que fazemos é testar apenas alguns casos de teste e assumir que o software está correto e produzirá a saída correta em todos os casos de teste.
+
+3. Teste antecipado
+
+Incorporar o teste o mais cedo possível no processo de desenvolvimento. Ele desempenha um papel crítico no ciclo de vida de desenvolvimento de software, quanto mais cedo bugs forem identificados mais barato e fácil será a correção.
+
+4. Agrupamento de defeitos
+
+Em um projeto, um pequeno número de módulos pode conter a maioria dos bugs. O Princípio de Pareto (Regra 80-20) para teste de software afirma que 80% do defeito de software vem de 20% dos módulos
+
+5. Paradoxo do Pesticida
+
+Repetir os mesmos casos de teste, repetidamente, não encontrará novos bug. É necessário revisar os casos de teste, e adicionar ou atualizar os casos de teste para encontrar novos bugs.
+
+6. Teste depende do contexto
+
+A abordagem de teste depende do contexto do software desenvolvido. Diferentes tipos de software precisam realizar diferentes tipos de teste.
+
+7. A ilusão da ausência de erros
+
+Se um software construído é 99% livre de bugs, mas não segue o atende às expectativas e necessidades do usuário, então ele é inutilizável.
+
+### Jest
+Observação Importante!! Os guias de testes nas aulas utilizam Jest e Cypress, essa escolha foi baseada na performance, funcionalidade e documentação dessas bibliotecas. Como tudo no mundo da programação é extremamente volátil, outras bibliotecas podem se tornar mais adequadas para o ambiente didático, caso isso aconteça sinta-se a vontade para discutir com a Head de Ensino e alterar as orientações dessa ementa.
+
+
+
 ## Teste Unitário
 
 Um teste unitário basicamente é o teste da menor parte testável de um programa. Se você programa em uma linguagem que suporte paradígma funcional por exemplo, a menor parte testável do seu código deve ser uma função. Então um teste unitário seria o teste de qualquer função. No caso de orientação a objetos seria o teste de um método de seu objeto.
