@@ -9,13 +9,12 @@ function allKeys(obj) {
     for (const key in obj){
         keys.push(key);
     }
-    return keys;
+    return keys; 
 }
 
 function isObject(obj) {
     const type = typeof obj;
     return type === 'function' || type === 'object' && !!obj;
 }
-
 
 module.exports = { allKeys, isObject }

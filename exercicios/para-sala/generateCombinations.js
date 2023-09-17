@@ -26,5 +26,4 @@ function generateCombinations(word)
     return combinations;
 }
 
-
 module.exports = generateCombinations
