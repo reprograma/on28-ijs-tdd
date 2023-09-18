@@ -4,7 +4,7 @@
   "description": "<h1 align=\"center\">\r   <img src=\"assets/reprograma-fundos-claros.png\" alt=\"logo reprograma\" width=\"500\">\r </h1>",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest --coverage"
   },
   "repository": {
     "type": "git",
