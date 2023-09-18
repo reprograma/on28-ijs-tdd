@@ -1,5 +1,4 @@
 // 5
-
 function allKeys(obj) {
     if (!isObject(obj)) {
         return [];
@@ -15,6 +14,10 @@ function allKeys(obj) {
 function isObject(obj) {
     const type = typeof obj;
     return type === 'function' || type === 'object' && !!obj;
+}
+
+const pessoa = {
+    nome: 'Amanda Luiza'
 }
 
 
