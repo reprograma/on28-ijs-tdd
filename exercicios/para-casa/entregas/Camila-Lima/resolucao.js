@@ -13,7 +13,6 @@ class Cliente{
         this.nome = nome;
         this.saldo = saldo;
         this.limite = limite;
-        // this.saldoLimite = this.saldoLimite
     }   
 
     consultarSaldo(){
@@ -42,6 +41,5 @@ class Cliente{
         return this.consultarSaldo()
     }
 }
-
 
 module.exports = Cliente
