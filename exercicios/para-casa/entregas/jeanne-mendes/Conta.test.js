@@ -35,4 +35,8 @@ describe("Testar classe Conta", () =>{
         expect(conta.sacarDinheiro(350)).toEqual("Saque não realizado. Limite insuficiente")
     })
 
+    test("Validar deposito de 75 reais na conta", () =>{
+        expect(conta.depositarDinheiro(75)).toEqual(175)
+    })
+
 })

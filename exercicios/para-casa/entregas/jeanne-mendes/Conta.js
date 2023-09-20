@@ -31,6 +31,13 @@ class Conta{
         return this.saldo;
     }
 
+    depositarDinheiro(valor){
+            
+        this.saldo = this.saldo + valor;
+        return this.saldo;
+
+    }
+
     
 
 }
