@@ -1,12 +1,12 @@
 class Produto {
-	constructor(nome, preco, fretegratis) {
+	constructor(nome, preco, freteGratis) {
 		this.nome = nome;
 		this.preco = preco;
-		this.fretegratis = fretegratis;
+		this.fretegratis = freteGratis;
 	}
 
 	hasFreteGratis() {
-		return this.fretegratis;
+		return this.freteGratis;
 	}
 }
 
