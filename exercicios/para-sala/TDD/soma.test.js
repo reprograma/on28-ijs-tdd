@@ -8,4 +8,5 @@ describe("sum two numbers", () => {
 
     expect(sum(2, 3)).toEqual(5);
    })
+
 });
