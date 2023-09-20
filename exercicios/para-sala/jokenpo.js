@@ -15,7 +15,4 @@ function jokenpo(jogada1, jogada2){
    return 'Jogador 1 venceu!';
 }
 
-// console.log(jokenpo("pedra", "tesoura"))
-console.log(jokenpo("papel", "tesoura"))
-
 module.exports = jokenpo
