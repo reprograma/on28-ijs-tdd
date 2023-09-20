@@ -1,6 +1,5 @@
 const ContaBancaria = require('./Entrega-Sabrina'); 
 
-// ContaBancaria
 describe('ContaBancaria', () => {
   let conta;
 
