@@ -25,8 +25,7 @@ describe("Produto", () => {
     // remover do estoque quando NÃO há estoque suficiente
     test("remover do estoque quando NÃO há estoque suficiente", () => {
         // expect(empada.removerDoEstoque(100)).toThrowError('Estoque insuficiente') //qual seria o melhor método para gerar erro?
-        // expect(() => {empada.removerDoEstoque(100);}).toThrow('Estoque insuficiente');
-
+        
         function gerarErroEstoque(){
             empada.removerDoEstoque(100)
         }
