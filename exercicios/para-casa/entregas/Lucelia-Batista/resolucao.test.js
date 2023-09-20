@@ -13,7 +13,7 @@ describe("Conta Bancária", () => {
     test("Validar erro de saldo insuficiente", () => {
         expect(() => { conta.retirarValor(11000) }).toThrow()
     })
-    test("Validar saque quando saldo for suficiente", () => {
+    test("Validar saque quando saldo for suficiente.", () => {
         expect(conta.retirarValor(1000)).toEqual(9000)
     })
 
