@@ -29,7 +29,7 @@ describe("Validar os métodos da classe Conta Bancária", () => {
     test("Validar o funcionamento do método ajustar LIMITE da conta, quando valor máximo é excedido.", () => {
         expect(contaMockada.ajustarLimiteDaConta(15000)).toEqual("Não foi possível ajustar o limite. \nLimite atual: R$1000 \nSaldo da conta: R$500")
     })
-    test("Validar o funcionamento do método ajustar LIMITE da conta, quando valor máximo é excedido.", () => {
+    test("Validar o funcionamento do método desativar LIMITE da conta, quando saldo e limite são insuficientes.", () => {
         expect(contaMockada.desativarLimiteDaConta(0)).toEqual("Limite desativado. Saldo e limite são insuficientes: R$0")
     })
 
