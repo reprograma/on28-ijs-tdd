@@ -42,7 +42,6 @@ describe("Conta Bancária", () => {
 	test("Testa a funcionalidade de desativar e reativar limite", () => {
 		conta.desativaLimite();
 		expect(conta.ativaLimite()).toBe(false);
-
 		conta2.desativaLimite();
 		expect(conta2.ativaLimite()).toBe(true);
 	});
