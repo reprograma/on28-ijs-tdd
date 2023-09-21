@@ -1,5 +1,4 @@
-function generateCombinations(word)
-{
+function generateCombinations(word) {
     const chars = [];
     for (let x = 0, y = 1; x < word.length; x++, y++)
     {
@@ -26,5 +25,5 @@ function generateCombinations(word)
     return combinations;
 }
 
-
+console.log(generateCombinations("sol"))
 module.exports = generateCombinations

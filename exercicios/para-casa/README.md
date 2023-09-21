@@ -1,10 +1,13 @@
 # Exercício de Casa 🏠 
 
+Considere um objeto que represente uma conta bancária, a conta possui o nome do titular, o saldo e o limite da conta.
+É possivel fazer operações de consulta desaldo, saque e deposito. No caso de saque é necesario verificar se existe saldo suficiente para retirada, caso o cliente não tenha saldo suficiente para a operação, mas possua limite disponivel (e suficiente), o saque poderá ocorrer, nesses casos o saldo do cliente ficará negativo após o saque. Além disso, o limite de uma conta pode ser reajustado (para mais e para menos) ou desativado.
+
+Use a abordagem Red - Green - Refactor para desenvolver essa aolicação.
 ## Nome do Exercicio
 
 - Explicação do exercício: 
-[CONTEUDO] 
----
+[CONTEUDO]
 
 Terminou o exercício? Dá uma olhada nessa checklist e confere se tá tudo certinho, combinado?!
 
