@@ -2,19 +2,19 @@ const ContaDoBanco = require('./resolucao')
 
 test('saldo inicial e limite devem ser iguais', () => {
   const conta = new ContaDoBanco('Maria Joaquina ', 1000, 500);
-  expect(conta.consultasaldo()).toBe(1000);
+  expect(conta.consultaSaldo()).toBe(1000);
 });
 
 test('deposito deve aumentar saldo', () => {
   const conta = new ContaDoBanco('Maria Joaquina', 1000, 500);
   conta.deposito(200);
-  expect(conta.consultasaldo()).toBe(1200);
+  expect(conta.consultaSaldo()).toBe(1200);
 });
 
 test('saque deve diminuir saldo', () => {
   const conta = new ContaDoBanco('Maria Joaquina ', 1000, 500);
   conta.sacar(200);
-  expect(conta.consultasaldo()).toBe(800);
+  expect(conta.consultaSaldo()).toBe(800);
 });
 
 test('saque com limite de cheque especial deve  usar limite', () => {
@@ -29,7 +29,7 @@ test('saque com fundos insuficientes deve gerar erro', () => {
 
 test('consulta do sasldo, consulta do saldo nao deve ser nula',() =>{
   const conta = new ContaDoBanco('Maria Joaquina', 1000, 500);
-  expect(conta.consultasaldo()).not.toBe(null)
+  expect(conta.consultaSaldo()).not.toBe(null)
 })
 
 test('desativar conta deve evitar futuras operações', () => {
