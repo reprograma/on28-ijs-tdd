@@ -1,13 +1,3 @@
-// No caso de saque é necessário verificar se existe saldo 
-// suficiente para retirada, caso o cliente não tenha 
-// saldo suficiente para a operação, mas possua limite disponível 
-// (e suficiente), o saque poderá ocorrer, nesses casos o saldo 
-// do cliente ficará negativo após o saque. Além disso, 
-// o limite de uma conta pode ser reajustado 
-// (para mais e para menos) ou desativado.
-
-// // Use a abordagem Red - Green - Refactor para desenvolver essa aplicação.
-
 class BankAccount {
     constructor(nome, saldo, limite) {
         this.nome = nome;
@@ -23,7 +13,7 @@ class BankAccount {
         return this.limite
     }
 
-    saque(valor) {
+    sacarValor(valor) {
         if(valor <= this.saldo){
             this.saldo -= valor;
         } else if(valor <= this.saldo + this.limite) {
@@ -35,17 +25,17 @@ class BankAccount {
         return this.consultarSaldo()
     }
 
-    deposito(valor) {
+    depositarValor(valor) {
         this.saldo = this.saldo + valor
         return this.consultarSaldo()
     }
 
-    novoLimite(novoLimite) {
+    ajustarLimite(novoLimite) {
         this.limite = novoLimite
         return this.consultarLimite()
     }
 
-    desativaLimite() {
+    desativarLimite() {
         this.limite = 0
         return this.consultarLimite()
     }
