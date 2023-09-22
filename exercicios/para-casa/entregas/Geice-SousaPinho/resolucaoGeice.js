@@ -8,37 +8,37 @@ class ContaBancaria {
     }
 
     verificarSaldo(){
-        return this.saldo
+        return `Saldo disponível: R$ ${this.saldo}`
     }
 
     verificarLimite(){
-        return this.limite
+        return `Limite disponível: R$ ${this.limite}`
     }
 
     sacar(valor){
             if (valor <= this.saldo || valor <= this.limite){
-                return valor
+                return `${valor} foi sacado. \n O saldo atual é: R$ ${valor + (- this.saldo)}`
             }
             else{
-                throw new Error('você não possui saldo suficiente')
+                throw new Error('Você não possui saldo suficiente')
             }
     }
 
     depositar(valor){
-        if (valor) return valor
+        if (valor) return `${valor} foi depositado. \n O saldo atual é: R$ ${valor + this.saldo}`
         else{
-            throw new Error('houve um erro inesperado, tenve novamente em instantes')
+            throw new Error('Houve um erro inesperado, tenve novamente em instantes')
         }
     }
 
     ajustarLimite(valor){
-        let limite
+        let novoLimite
         if (valor <= this.limite){
-            limite = valor
-            return limite
+            novoLimite = valor + (- this.limite)
+            return `Limite ajustado com sucesso! Limite disponível: R$${novoLimite}`
         }
         if (valor >= this.limite){
-            throw new Error('não foi possível ajustar o limite, entre em contato com seu gerente')
+            throw new Error('Não foi possível ajustar o limite, entre em contato com seu gerente')
 
         }
     }
