@@ -18,7 +18,7 @@ describe("Conta Bancária", () => {
     })
 
     // Depósito
-    test("Validar atualização correta do saldo, após receber um depósito", () => {
+    test("Validar atualização correta do saldo, após receber um depósito.", () => {
         expect(conta.depositarValor(1000)).toEqual(11000)
     })
 
@@ -26,6 +26,4 @@ describe("Conta Bancária", () => {
     test("Validar se o valor limite é um número positivo", () => {
         expect(() => { conta.validarLimiteExtraParaSaque(-2)}).toThrow()
     })
-
-
 })
