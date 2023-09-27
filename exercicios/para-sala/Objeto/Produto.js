@@ -30,12 +30,4 @@ class Produto{
     }
 }
 
-const empada = new Produto("Empada", 7, 25)
-
-console.log(empada)
-console.log(empada.adicionarAoEstoque(2))
-console.log(empada)
-console.log(empada.removerDoEstoque(2))
-console.log(empada.consultarEstoque())
-
 module.exports = Produto

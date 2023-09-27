@@ -4,7 +4,7 @@
 
 # Tema da Aula
 
-Turma Online 28 - Imersão JavaScript | Semana 1 | 2023 | Professora Isabelle Galvão
+Turma Online 28 - Imersão JavaScript | Semana 1 | 2023 | [Professora Isabelle Galvão](https://www.linkedin.com/in/isabellegalvao)
 
 ### Instruções
 Antes de começar, vamos organizar nosso setup.

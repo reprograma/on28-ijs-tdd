@@ -9,7 +9,7 @@ test('aluno com nota 9 não deve ser reprovado', () => {
 
 ### Exercício 2
 ````javascript
-it('caso nenhum id seja passado o resultado deve ser undefined', async () => {
+it('caso nenhum id seja passado o resultado deve ser undefined', () => {
     expect(getCompanyById()).toBeUndefined();
 });
 ````
@@ -40,7 +40,7 @@ describe("Produto", () => {
     let tenis
 
     beforeEach(() => {
-        tenis = new Produto("Tenis", 150, false)
+        tenis = new Produto("Tenis", 150, false) // nome, preco, freteGratis (bool)
     }) 
 
     test('opção de frete grátis não ativada', () => {
@@ -56,6 +56,6 @@ describe("Produto", () => {
 ````javascript
 test('resposta da requisição superou o limite de tempo', () => {
     var result = fazerRequisicao();
-	expect(result.time).toBeGreaterThan(4000);
+	expect(result.time).toBeGreaterThan(4000); // setTimeout
 });
 ````
