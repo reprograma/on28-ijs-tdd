@@ -17,4 +17,15 @@ function isObject(obj) {
     return type === 'function' || type === 'object' && !!obj;
 }
 
+/*
+
+const pessoa = {
+    nome: 'Carolina',
+    sobrenome: 'Zago',
+}
+
+[nome, sobrenome]
+
+*/
+
 module.exports = { allKeys, isObject }
